@@ -1,12 +1,4 @@
-# Inery
-
-### Reference
-
-* [https://docs.inery.io/docs/lite-and-master-nodes-2](https://docs.inery.io/docs/lite-and-master-nodes-2)
-
-### Website
-
-* [https://testnet.inery.io/](https://testnet.inery.io/)
+# Task 1
 
 ### Install
 

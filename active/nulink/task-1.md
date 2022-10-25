@@ -1,13 +1,4 @@
-# NuLink
-
-### Reference
-
-* [https://blokdrops.medium.com/nulink-testnet-guide-earn-upto-6000-nlks-3a66d4f47407](https://blokdrops.medium.com/nulink-testnet-guide-earn-upto-6000-nlks-3a66d4f47407)
-* [https://docs.nulink.org/products/nulink\_worker/eth\_account](https://docs.nulink.org/products/nulink\_worker/eth\_account)
-
-### Claim Token Metamask
-
-* [https://test-staking.nulink.org/](https://test-staking.nulink.org/)
+# Task 1
 
 ### Install
 
@@ -52,8 +43,13 @@ mkdir -p /root/nulink
 
 Disini kita mau copy file dari akun tadi, ganti sesuai akun kalian
 
-<pre data-overflow="wrap" data-line-numbers><code><strong>cp /root/.ethereum/keystore/UTC--2022-10-21T15-32-31.045522201Z--630fdd6229c0ee6b1546194e1ac5ff81df8c7004 /root/nulink
-</strong><strong>chmod -R 777 /root/nulink</strong></code></pre>
+<pre data-overflow="wrap" data-line-numbers><code><strong>cp /root/.ethereum/keystore/UTC--2022-10-21T15-32-31.045522201Z--630fdd6229c0ee6b1546194e1ac5ff81df8c7004 /root/nulink</strong></code></pre>
+
+Ganti permission folder
+
+```
+chmod -R 777 /root/nulink
+```
 
 Disini kita akan siapin password neulink, password nya sama dengan password wallet
 
@@ -140,7 +136,7 @@ nulink/nulink nulink ursula run --no-block-until-ready
 Cek Logs
 
 ```
- docker logs -f ursula
+docker logs -f ursula
 ```
 
 Sample output
