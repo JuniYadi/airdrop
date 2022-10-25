@@ -140,7 +140,7 @@ nulink/nulink nulink ursula run --no-block-until-ready
 Cek Logs
 
 ```
- docker logs -f ursula
+docker logs -f ursula
 ```
 
 Sample output
