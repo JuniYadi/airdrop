@@ -52,13 +52,8 @@ mkdir -p /root/nulink
 
 Disini kita mau copy file dari akun tadi, ganti sesuai akun kalian
 
-<pre data-overflow="wrap" data-line-numbers><code><strong>cp /root/.ethereum/keystore/UTC--2022-10-21T15-32-31.045522201Z--630fdd6229c0ee6b1546194e1ac5ff81df8c7004 /root/nulink</strong></code></pre>
-
-Ganti permission folder
-
-```
-chmod -R 777 /root/nulink
-```
+<pre data-overflow="wrap" data-line-numbers><code><strong>cp /root/.ethereum/keystore/UTC--2022-10-21T15-32-31.045522201Z--630fdd6229c0ee6b1546194e1ac5ff81df8c7004 /root/nulink
+</strong><strong>chmod -R 777 /root/nulink</strong></code></pre>
 
 Disini kita akan siapin password neulink, password nya sama dengan password wallet
 
@@ -145,7 +140,7 @@ nulink/nulink nulink ursula run --no-block-until-ready
 Cek Logs
 
 ```
-docker logs -f ursula
+ docker logs -f ursula
 ```
 
 Sample output
