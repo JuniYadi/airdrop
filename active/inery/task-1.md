@@ -56,3 +56,33 @@ cd ..
 screen -S master
 ./ine.py --master
 ```
+
+**Setup Wallet**
+
+Buka tab baru terus konek ke vps, yang dari command diatas biarkan saja supaya running
+
+```
+cd; cline wallet create --file defaultWallet.txt
+```
+
+**Cek Wallet Password**
+
+```
+cat defaultWallet.txt;echo;
+```
+
+**Connect ke Wallet**
+
+```
+cline wallet unlock --password YOUR_WALLET_PASSWORD
+cline wallet import --private-key MASTER_PRIVATE_KEY
+cline system regproducer ACCOUNT_NAME ACCOUNT_PUBLIC_KEY 0.0.0.0:9010
+cline system makeprod approve ACCOUNT_NAME ACCOUNT_NAME
+```
+
+**Catatan:**
+
+* YOUR\_WALLET\_PASSWORD = cek di file defaultWallet.txt
+* MASTER\_PRIVATE\_KEY = dari Privatekey di Web Inery
+* ACCOUNT\_NAME = dari Web Inery
+* ACCOUNT\_PUBLIC\_KEY = dari Web Inery
